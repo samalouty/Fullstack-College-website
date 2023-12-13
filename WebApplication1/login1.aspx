@@ -10,7 +10,7 @@
             font-family: 'Arial', sans-serif;
             background-color: #f5f5f5;
             text-align: center;
-
+            
         }
 
         #form1 {

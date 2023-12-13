@@ -71,6 +71,7 @@
     <Content Include="AdvisorList.aspx" />
     <Content Include="AdvisorWithStudent.aspx" />
     <Content Include="login1.aspx" />
+    <Content Include="NewCourse.aspx" />
     <Content Include="NewSem.aspx" />
     <Content Include="PendingRequests.aspx" />
     <Content Include="Web.config" />
@@ -103,6 +104,13 @@
     </Compile>
     <Compile Include="login1.aspx.designer.cs">
       <DependentUpon>login1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NewCourse.aspx.cs">
+      <DependentUpon>NewCourse.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NewCourse.aspx.designer.cs">
+      <DependentUpon>NewCourse.aspx</DependentUpon>
     </Compile>
     <Compile Include="NewSem.aspx.cs">
       <DependentUpon>NewSem.aspx</DependentUpon>
