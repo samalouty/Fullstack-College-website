@@ -42,7 +42,7 @@ namespace WebApplication1
 
         protected void btnLinkInstructorToCourse_Click(object sender, EventArgs e)
         {
-            // Implement logic to link instructor to a course in a specific slot
+            Response.Redirect("InstToCourse.aspx");
         }
 
         protected void btnLinkStudentToAdvisor_Click(object sender, EventArgs e)

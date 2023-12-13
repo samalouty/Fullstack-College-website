@@ -70,6 +70,7 @@
     <Content Include="AdminPage.aspx" />
     <Content Include="AdvisorList.aspx" />
     <Content Include="AdvisorWithStudent.aspx" />
+    <Content Include="InstToCourse.aspx" />
     <Content Include="login1.aspx" />
     <Content Include="NewCourse.aspx" />
     <Content Include="NewSem.aspx" />
@@ -97,6 +98,13 @@
     </Compile>
     <Compile Include="AdvisorWithStudent.aspx.designer.cs">
       <DependentUpon>AdvisorWithStudent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="InstToCourse.aspx.cs">
+      <DependentUpon>InstToCourse.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InstToCourse.aspx.designer.cs">
+      <DependentUpon>InstToCourse.aspx</DependentUpon>
     </Compile>
     <Compile Include="login1.aspx.cs">
       <DependentUpon>login1.aspx</DependentUpon>
