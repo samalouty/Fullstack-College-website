@@ -31,6 +31,8 @@ namespace WebApplication1
 
             form1.Controls.Add(gridView);
 
+            conn.Close();
+
 
         }
     }

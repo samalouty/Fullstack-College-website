@@ -40,8 +40,16 @@ namespace WebApplication1
 
 
                     conn.Open();
-                    studAdvLink.ExecuteNonQuery();
+                    int succ = studAdvLink.ExecuteNonQuery();
                     conn.Close();
+
+                    if (succ == 0)
+                    {
+                        ClientScript.RegisterStartupScript(GetType(), "alert", "alert('Non-existing Student entered please re-enter Student ID.');", true);
+                        return; 
+                    }
+                    conn.Close();
+
                     Response.Write("Linked Student With Advisor");
                 }
                 catch (SqlException ex)
