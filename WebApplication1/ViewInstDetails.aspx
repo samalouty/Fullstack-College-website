@@ -46,6 +46,20 @@
         tr:nth-child(even) {
             background-color: #f2f2f2;
         }
+
+        .red-button{
+            background-color: #f90b31;
+            color: #fff;
+            padding: 10px;
+            margin: 5px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .red-button:hover {
+            background-color: #ff3f52;
+        }
     </style>
 </head>
 <body>
@@ -54,6 +68,8 @@
             <h2>Instructors along with their assigned courses</h2>
 
             <asp:GridView runat="server" ID="GridView1" AutoGenerateColumns="true" CssClass="gridview" />
+            <asp:Button runat="server" ID="btnRedirect" Text="Go to Admin Page" CssClass="red-button" PostBackUrl="AdminPage.aspx" />
+
 
         </div>
     </form>
