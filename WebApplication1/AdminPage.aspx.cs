@@ -47,12 +47,12 @@ namespace WebApplication1
 
         protected void btnLinkStudentToAdvisor_Click(object sender, EventArgs e)
         {
-            // Implement logic to link a student to an advisor
+            Response.Redirect("StudToAdv.aspx");
         }
 
         protected void btnLinkStudentToCourseInstructor_Click(object sender, EventArgs e)
         {
-            // Implement logic to link a student to a course with a specific instructor
+            Response.Redirect("StudToCourseInst.aspx");
         }
 
         protected void btnViewInstructorDetails_Click(object sender, EventArgs e)

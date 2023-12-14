@@ -16,6 +16,7 @@ namespace WebApplication1
 
         protected void btnLogin_Click(object sender, EventArgs e)
         {
+
             // Hardcoded admin credentials
             int adminUserId = 842;
             string adminPassword = "admin";

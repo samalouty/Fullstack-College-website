@@ -75,6 +75,8 @@
     <Content Include="NewCourse.aspx" />
     <Content Include="NewSem.aspx" />
     <Content Include="PendingRequests.aspx" />
+    <Content Include="StudToAdv.aspx" />
+    <Content Include="StudToCourseInst.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -135,6 +137,20 @@
       <DependentUpon>PendingRequests.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StudToAdv.aspx.cs">
+      <DependentUpon>StudToAdv.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StudToAdv.aspx.designer.cs">
+      <DependentUpon>StudToAdv.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StudToCourseInst.aspx.cs">
+      <DependentUpon>StudToCourseInst.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StudToCourseInst.aspx.designer.cs">
+      <DependentUpon>StudToCourseInst.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

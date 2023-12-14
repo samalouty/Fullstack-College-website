@@ -21,24 +21,33 @@ namespace WebApplication1
         {
             if (ValidateForm())
             {
-                String connStr = WebConfigurationManager.ConnectionStrings["Advising_System"].ToString();
-                SqlConnection conn = new SqlConnection(connStr);
 
-                String start_date = startDate.Text; 
-                String end_date = endDate.Text;
-                String semester_code = semesterCode.Text; 
+                try
+                {
+                    String connStr = WebConfigurationManager.ConnectionStrings["Advising_System"].ToString();
+                    SqlConnection conn = new SqlConnection(connStr);
 
-                SqlCommand newSem = new SqlCommand("AdminAddingSemester", conn);
-                newSem.CommandType = CommandType.StoredProcedure;
-                newSem.Parameters.Add(new SqlParameter("@start_date", start_date));
-                newSem.Parameters.Add(new SqlParameter("@end_date", end_date));
-                newSem.Parameters.Add(new SqlParameter("@semester_code", semester_code));
+                    String start_date = startDate.Text;
+                    String end_date = endDate.Text;
+                    String semester_code = semesterCode.Text;
+
+                    SqlCommand newSem = new SqlCommand("AdminAddingSemester", conn);
+                    newSem.CommandType = CommandType.StoredProcedure;
+                    newSem.Parameters.Add(new SqlParameter("@start_date", start_date));
+                    newSem.Parameters.Add(new SqlParameter("@end_date", end_date));
+                    newSem.Parameters.Add(new SqlParameter("@semester_code", semester_code));
 
 
-                conn.Open();
-                newSem.ExecuteNonQuery();
-                conn.Close();
-                Response.Write("New Semester added");
+                    conn.Open();
+                    newSem.ExecuteNonQuery();
+                    conn.Close();
+                    Response.Write("New Semester added");
+                }
+                catch (Exception ex)
+                {
+                    ClientScript.RegisterStartupScript(GetType(), "alert", "alert('Can not enter duplicate record, make sure that the Semester Code is correct.');", true);
+
+                }
             }
         }
 
