@@ -65,6 +65,11 @@ namespace WebApplication1
             Response.Redirect("ViewSemCourses.aspx");
         }
 
+        protected void btnLogOut_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("login1.aspx");
+        }
+
 
 
 

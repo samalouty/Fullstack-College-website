@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices.ComTypes;
 using System.Web;
 using System.Web.Configuration;
 using System.Web.UI;
@@ -16,27 +17,40 @@ namespace WebApplication1
 
         protected void btnLogin_Click(object sender, EventArgs e)
         {
-
-            // Hardcoded admin credentials
-            int adminUserId = 842;
-            string adminPassword = "admin";
-
-            int enteredUserId;
-            if (int.TryParse(txtUserId.Text.Trim(), out enteredUserId))
+            if (ValidateForm())
             {
-                if (enteredUserId == adminUserId && txtPassword.Text.Trim() == adminPassword)
+
+                int adminUserId = 842;
+                string adminPassword = "admin";
+
+                int enteredUserId;
+                if (int.TryParse(txtUserId.Text.Trim(), out enteredUserId))
                 {
-                    Response.Redirect("AdminPage.aspx");
+                    if (enteredUserId == adminUserId && txtPassword.Text.Trim() == adminPassword)
+                    {
+                        Response.Redirect("AdminPage.aspx");
+                    }
+                    else
+                    {
+                        Response.Write("<script>alert('Invalid credentials. Please try again.');</script>");
+                    }
                 }
                 else
                 {
-                    Response.Write("<script>alert('Invalid credentials. Please try again.');</script>");
+                    Response.Write("<script>alert('Invalid User ID format. Please enter a valid number.');</script>");
                 }
             }
-            else
+        }
+
+        private bool ValidateForm()
+        {
+            if (string.IsNullOrEmpty(txtUserId.Text) || string.IsNullOrEmpty(txtPassword.Text))
             {
-                Response.Write("<script>alert('Invalid User ID format. Please enter a valid number.');</script>");
+                ClientScript.RegisterStartupScript(GetType(), "alert", "alert('All fields are required.');", true);
+                return false;
             }
+
+            return true;
         }
     }
 }

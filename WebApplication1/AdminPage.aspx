@@ -23,6 +23,20 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
+        .red-button{
+             background-color: #f90b31;
+             color: #fff;
+             padding: 10px;
+             margin: 5px;
+             border: none;
+             border-radius: 4px;
+             cursor: pointer;
+        }
+
+        .red-button:hover {
+            background-color: #45a049;
+        }
+
         .button {
             background-color: #4caf50;
             color: #fff;
@@ -53,6 +67,8 @@
             <asp:Button runat="server" ID="btnLinkStudentToCourseInstructor" Text="Link Student to Course with Instructor" CssClass="button" OnClick="btnLinkStudentToCourseInstructor_Click" /><br />
             <asp:Button runat="server" ID="btnViewInstructorDetails" Text="View Instructor Details" CssClass="button" OnClick="btnViewInstructorDetails_Click" /><br />
             <asp:Button runat="server" ID="btnFetchAllSemesters" Text="Fetch All Semesters with Courses" CssClass="button" OnClick="btnFetchAllSemesters_Click" /><br />
+            <asp:Button runat="server" ID="btnLogOut" Text="Logout" CssClass="red-button" OnClick="btnLogOut_Click" /><br />
+
         </div>
 
          <div class="form">
