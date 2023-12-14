@@ -14,7 +14,6 @@ namespace WebApplication1
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            // Add any initialization logic if needed
         }
 
         protected void btnSubmit_Click(object sender, EventArgs e)
@@ -36,6 +35,12 @@ namespace WebApplication1
                     newSem.Parameters.Add(new SqlParameter("@start_date", start_date));
                     newSem.Parameters.Add(new SqlParameter("@end_date", end_date));
                     newSem.Parameters.Add(new SqlParameter("@semester_code", semester_code));
+
+                    if(DateTime.Parse(end_date) < DateTime.Parse(start_date))
+                    {
+                        ClientScript.RegisterStartupScript(GetType(), "alert", "alert('Start date must be before the end date');", true);
+                        return; 
+                    }
 
 
                     conn.Open();

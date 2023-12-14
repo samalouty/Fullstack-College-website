@@ -1,10 +1,10 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="PendingRequests.aspx.cs" Inherits="WebApplication1.PendingRequests" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ViewInstDetails.aspx.cs" Inherits="WebApplication1.ViewInstDetails" %>
 
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title>Pending requests</title>
+    <title>Instructor List</title>
     <style>
         body {
             font-family: 'Arial', sans-serif;
@@ -51,7 +51,7 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            <h2>Pending requests</h2>
+            <h2>Instructors along with their assigned courses</h2>
 
             <asp:GridView runat="server" ID="GridView1" AutoGenerateColumns="true" CssClass="gridview" />
 

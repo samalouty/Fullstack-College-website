@@ -57,12 +57,12 @@ namespace WebApplication1
 
         protected void btnViewInstructorDetails_Click(object sender, EventArgs e)
         {
-            // Implement logic to view all details of instructors along with their assigned courses
+            Response.Redirect("ViewInstDetails.aspx");
         }
 
         protected void btnFetchAllSemesters_Click(object sender, EventArgs e)
         {
-            // Implement logic to fetch all semesters along with their offered courses
+            Response.Redirect("ViewSemCourses.aspx");
         }
 
 
