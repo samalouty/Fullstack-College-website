@@ -84,6 +84,8 @@
                 <asp:Button runat="server" ID="btnViewGraduationPlans" Text="View Graduation Plans" CssClass="button" OnClick="btnViewGraduationPlans_Click" /><br />
                 <asp:Button runat="server" ID="btnViewTranscriptDetails" Text="View Transcript Details" CssClass="button" OnClick="btnViewTranscriptDetails_Click" /><br />
                 <asp:Button runat="server" ID="btnFetchAllSemesters2" Text="Fetch All Semesters with Courses" CssClass="button" OnClick="btnFetchAllSemesters2_Click" /><br />
+                <asp:Button runat="server" ID="Button1" Text="Logout" CssClass="red-button" OnClick="btnLogOut_Click" /><br />
+
             </div>
 
 

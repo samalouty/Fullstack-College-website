@@ -1,12 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Viewgraduationplans.aspx.cs" Inherits="WebApplication1.Viewgraduationplans" %>
-
-<!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title></title>
-<style>
-    body {
+﻿body {
     font-family: 'Arial', sans-serif;
     background-color: #f5f5f5;
     margin: 0;
@@ -14,7 +6,7 @@
 }
 
 form {
-    max-width: 1000px;
+    max-width: 800px;
     margin: 20px auto;
     padding: 20px;
     background-color: #fff;
@@ -46,7 +38,8 @@ th {
 tr:nth-child(even) {
     background-color: #f2f2f2;
 }
-.red-button{
+
+.red-button {
     background-color: #f90b31;
     color: #fff;
     padding: 10px;
@@ -56,17 +49,6 @@ tr:nth-child(even) {
     cursor: pointer;
 }
 
-.red-button:hover {
-    background-color: #ff3f52;
-}
-</style>
-</head>
-<body>
-    <form id="form1" runat="server">
-        <div>
-            <asp:Button runat="server" ID="btnRedirect" Text="Go to Admin Page" CssClass="red-button" PostBackUrl="AdminPage.aspx" />
-
-        </div>
-    </form>
-</body>
-</html>
+    .red-button:hover {
+        background-color: #ff3f52;
+    }

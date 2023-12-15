@@ -74,6 +74,8 @@
     <Content Include="Course_Delete.aspx" />
     <Content Include="Fetchactivestudents.aspx" />
     <Content Include="Fetchsemesters.aspx" />
+    <Content Include="GreenStyles.css" />
+    <Content Include="greenTable.css" />
     <Content Include="InstToCourse.aspx" />
     <Content Include="IssueInstallment.aspx" />
     <Content Include="login1.aspx" />
