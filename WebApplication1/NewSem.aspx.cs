@@ -63,6 +63,11 @@ namespace WebApplication1
                 ClientScript.RegisterStartupScript(GetType(), "alert", "alert('All fields are required.');", true);
                 return false;
             }
+            if (semesterCode.Text[0] != 'W' && semesterCode.Text[0] != 'S' || semesterCode.Text.Length >6)
+            {
+                ClientScript.RegisterStartupScript(GetType(), "alert", "alert('Enter a valid semester Code');", true);
+                return false;
+            }
 
             return true;
         }
