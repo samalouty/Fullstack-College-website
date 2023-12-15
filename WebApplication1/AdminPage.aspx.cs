@@ -86,52 +86,52 @@ namespace WebApplication1
 
         protected void btnDeleteCourse_Click(object sender, EventArgs e)
         {
-            // Implement logic to delete a course along with its related slots
+            Response.Redirect("Course_Delete.aspx");
         }
 
         protected void btnDeleteSlot_Click(object sender, EventArgs e)
         {
-            // Implement logic to delete a slot of a certain course if the course isn’t offered in the current semester
+            Response.Redirect("Slot_Delete.aspx");
         }
 
         protected void btnAddMakeupExam_Click(object sender, EventArgs e)
         {
-            // Implement logic to add a makeup exam for a certain course
+            Response.Redirect("AddMakeup_Exam.aspx");
         }
 
         protected void btnViewPaymentDetails_Click(object sender, EventArgs e)
         {
-            // Implement logic to view details for all payments along with their corresponding students
+            Response.Redirect("ViewPaymentDetails.aspx");
         }
 
         protected void btnIssueInstallments_Click(object sender, EventArgs e)
         {
-            // Implement logic to issue installments as per the number of installments for a certain payment
+            Response.Redirect("IssueInstallment.aspx");
         }
 
         protected void btnUpdateStudentStatus_Click(object sender, EventArgs e)
         {
-            // Implement logic to update a student status based on his/her financial status
+            Response.Redirect("Updatestatus.aspx");
         }
 
         protected void btnViewActiveStudents_Click(object sender, EventArgs e)
         {
-            // Implement logic to fetch all details of active students
+            Response.Redirect("Fetchactivestudents.aspx");
         }
 
         protected void btnViewGraduationPlans_Click(object sender, EventArgs e)
         {
-            // Implement logic to view all graduation plans along with their initiated advisors
+            Response.Redirect("Viewgraduationplans.aspx");
         }
 
         protected void btnViewTranscriptDetails_Click(object sender, EventArgs e)
         {
-            // Implement logic to view all students transcript details
+            Response.Redirect("Viewtranscript.aspx");
         }
 
         protected void btnFetchAllSemesters2_Click(object sender, EventArgs e)
         {
-            // Implement logic to fetch all semesters along with their offered courses
+            Response.Redirect("Fetchsemesters.aspx");
         }
     }
 }

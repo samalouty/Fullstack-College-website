@@ -65,6 +65,17 @@ namespace WebApplication1
                 return false;
             }
 
+            if (semesterTest<=0 || semesterTest >=11) {
+                ClientScript.RegisterStartupScript(GetType(), "alert", "alert('Semester must be between 1 and 10.');", true);
+                return false;
+            }
+
+            if (creditHoursTest <= 0 || creditHoursTest >= 61)
+            {
+                ClientScript.RegisterStartupScript(GetType(), "alert", "alert('Credit Hours must be between 1 and 60.');", true);
+                return false;
+            }
+
 
             return true;
         }
