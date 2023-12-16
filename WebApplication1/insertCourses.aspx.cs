@@ -27,10 +27,14 @@ namespace WebApplication1
                 String SemCode = (semester_code.Text);
                 String CourseName = (course_name.Text);
 
-
+                /* @Semester_code varchar(40), 
+                    @expected_graduation_date date, 
+                    @sem_credit_hours int,
+                    @advisor_id int,
+                    @student_id int */
                 SqlConnection conn = new SqlConnection(connStr);
 
-                SqlCommand AdvisorAddCourse = new SqlCommand("Procedures_AdvisorCreateGP", conn);
+                SqlCommand AdvisorAddCourse = new SqlCommand("Procedures_AdvisorAddCourseGP", conn);
                 AdvisorAddCourse.CommandType = CommandType.StoredProcedure;
                 AdvisorAddCourse.Parameters.Add(new SqlParameter("@student_id", studentId));
                 AdvisorAddCourse.Parameters.Add(new SqlParameter("@Semester_code", SemCode));
@@ -46,6 +50,11 @@ namespace WebApplication1
             catch (FormatException ex)
             {
                 Response.Write("Input is invalid, Try again!");
+            }
+
+            catch (SqlException sq) {
+                Response.Write("No graduation plan to add the course to");
+
             }
 
         }

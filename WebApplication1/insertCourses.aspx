@@ -26,6 +26,8 @@
         <asp:TextBox ID="course_name" runat="server"></asp:TextBox>
         <br />
         <asp:Button ID="Button1" OnClick="btn_insertCourse_Click" runat="server" Text="Insert Course" />
+        <asp:Button runat="server" ID="btnRedirect" Text="Go to Advisor page" CssClass="red-button" PostBackUrl="advisorpage.aspx" />
+
     </form>
 </body>
 </html>

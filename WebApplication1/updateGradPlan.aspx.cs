@@ -32,8 +32,8 @@ namespace WebApplication1
 
                     SqlCommand AdvisorUpdateGradDate = new SqlCommand("Procedures_AdvisorUpdateGP", conn);
                     AdvisorUpdateGradDate.CommandType = CommandType.StoredProcedure;
-                    AdvisorUpdateGradDate.Parameters.Add(new SqlParameter("@student_id", studentId));
-                    AdvisorUpdateGradDate.Parameters.Add(new SqlParameter("@@expected_grad_date", ExpectedGradDate));
+                    AdvisorUpdateGradDate.Parameters.Add(new SqlParameter("@studentID", studentId));
+                    AdvisorUpdateGradDate.Parameters.Add(new SqlParameter("@expected_grad_date", ExpectedGradDate));
 
 
                     conn.Open();

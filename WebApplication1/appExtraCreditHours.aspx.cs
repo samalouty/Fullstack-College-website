@@ -38,7 +38,7 @@ namespace WebApplication1
                 conn.Open();
                 int i = AdvisorApproveCredit.ExecuteNonQuery();
                 conn.Close();
-                if (i > 0) { Response.Write("successful"); }
+                if (i == 4) { Response.Write("successful"); }
                 else { Response.Write("Unsuccessful"); }
             }
 

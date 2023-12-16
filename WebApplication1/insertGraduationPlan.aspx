@@ -34,8 +34,8 @@
             <asp:TextBox ID="Student_ID" runat="server"></asp:TextBox>&nbsp;</div>
         <div class="">
             <asp:Button runat="server" OnClick="btn_insertGradPlan_Click" Text="Insert"></asp:Button>&nbsp;</div>
-        <div class="">
-            &nbsp;</div>
+        <asp:Button runat="server" ID="btnRedirect" Text="Go to Advisor page" CssClass="red-button" PostBackUrl="advisorpage.aspx" />
+
     </form>
 </body>
 </html>

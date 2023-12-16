@@ -32,13 +32,13 @@ namespace WebApplication1
                 SqlCommand AdvisorApproveCourse = new SqlCommand("Procedures_AdvisorApproveRejectCourseRequest", conn);
                 AdvisorApproveCourse.CommandType = CommandType.StoredProcedure;
                 AdvisorApproveCourse.Parameters.Add(new SqlParameter("@requestID", RequestId));
-                AdvisorApproveCourse.Parameters.Add(new SqlParameter("@current_sem_code", SemCode));
+                AdvisorApproveCourse.Parameters.Add(new SqlParameter("@current_semester_code", SemCode));
 
 
                 conn.Open();
                 int i = AdvisorApproveCourse.ExecuteNonQuery();
                 conn.Close();
-                if (i > 0) { Response.Write("successful"); }
+                if (i == 3) { Response.Write("successful"); }
                 else { Response.Write("Unsuccessful"); }
             }
 

@@ -31,7 +31,7 @@ namespace WebApplication1
 
                 SqlCommand AdvisorDeleteCourse = new SqlCommand("Procedures_AdvisorDeleteFromGP", conn);
                 AdvisorDeleteCourse.CommandType = CommandType.StoredProcedure;
-                AdvisorDeleteCourse.Parameters.Add(new SqlParameter("@student_id", StudentId));
+                AdvisorDeleteCourse.Parameters.Add(new SqlParameter("@studentID", StudentId));
                 AdvisorDeleteCourse.Parameters.Add(new SqlParameter("@sem_code", SemCode));
                 AdvisorDeleteCourse.Parameters.Add(new SqlParameter("@courseID", CourseId));
 

@@ -20,6 +20,8 @@
             <br />
             <asp:Button ID="Button1" OnClick="btn_update_Click" runat="server" Text="Update" />
             <br />
+            <asp:Button runat="server" ID="btnRedirect" Text="Go to Advisor page" CssClass="red-button" PostBackUrl="advisorpage.aspx" />
+
         </div>
     </form>
 </body>

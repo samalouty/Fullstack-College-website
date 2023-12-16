@@ -20,6 +20,8 @@
             <asp:TextBox ID="current_sem_code" runat="server"></asp:TextBox>
             <br />
             <asp:Button ID="Button1" OnClick="btn_accept_Click" runat="server" Text="Proceed" />
+                    <asp:Button runat="server" ID="btnRedirect" Text="Go to Advisor page" CssClass="red-button" PostBackUrl="advisorpage.aspx" />
+
             
         </div>
     </form>

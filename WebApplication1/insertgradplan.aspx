@@ -9,6 +9,8 @@
 <body>
     <form id="form1" runat="server">
         <div>
+        <asp:Button runat="server" ID="btnRedirect" Text="Go to Home page" CssClass="red-button" PostBackUrl="Registeration.aspx" />
+
         </div>
     </form>
 </body>

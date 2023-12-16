@@ -13,6 +13,8 @@
               <asp:Label runat="server" Text="Major:"></asp:Label>
               <asp:TextBox runat="server" ID="major" />
               <asp:Button runat="server" ID="btnSubmit" Text="Submit" OnClick="submit" />
+              <asp:Button runat="server" ID="btnRedirect" Text="Go to Advisor page" CssClass="red-button" PostBackUrl="advisorpage.aspx" />
+
 
         </div>
     </form>

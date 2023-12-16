@@ -10,6 +10,8 @@
     <form id="form1" runat="server">
         <div>
             <asp:Label runat="server" Text="All advising Students"></asp:Label>
+            <asp:Button runat="server" ID="btnRedirect" Text="Go to Advisor page" CssClass="red-button" PostBackUrl="advisorpage.aspx" />
+
         </div>
     </form>
 </body>

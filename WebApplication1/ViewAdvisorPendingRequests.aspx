@@ -9,6 +9,9 @@
 <body>
     <form id="form1" runat="server">
         <div>
+                    <h2>All pending requests</h2>
+                    <asp:Button runat="server" ID="btnRedirect" Text="Go to Advisor page" CssClass="red-button" PostBackUrl="advisorpage.aspx" />
+
         </div>
     </form>
 </body>

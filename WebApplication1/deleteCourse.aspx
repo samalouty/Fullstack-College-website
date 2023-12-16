@@ -24,6 +24,8 @@
             <br />
             <asp:Button ID="Button1" OnClick="btn_deleteCourse_Click" runat="server" Text="Delete" />
         </div>
+            <asp:Button runat="server" ID="btnRedirect" Text="Go to Advisor page" CssClass="red-button" PostBackUrl="advisorpage.aspx" />
+
     </form>
 </body>
 </html>

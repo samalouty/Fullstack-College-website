@@ -19,6 +19,8 @@
             <asp:TextBox ID="current_semester_code" runat="server"></asp:TextBox>
             <br />
             <asp:Button ID="Button1" OnClick="btn_proceed2_click" runat="server" Text="Proceed" />
+                    <asp:Button runat="server" ID="btnRedirect" Text="Go to Advisor page" CssClass="red-button" PostBackUrl="advisorpage.aspx" />
+
         </div>
     </form>
 </body>
