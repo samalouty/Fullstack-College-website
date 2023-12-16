@@ -51,6 +51,19 @@
         .button:hover {
             background-color: #45a049;
         }
+        .red-button {
+            background-color: #f90b31;
+            color: #fff;
+            padding: 10px;
+            margin: 5px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .red-button:hover {
+            background-color: #ff3f52;
+        }
     </style>
 </head>
 <body>
@@ -65,6 +78,8 @@
             <asp:TextBox runat="server" ID="txtPassword" TextMode="Password" CssClass="textbox"></asp:TextBox><br />
 
             <asp:Button runat="server" Text="Login" OnClick="btnLogin_Click" CssClass="button" />
+            <asp:Button runat="server" ID="btnRedirect" Text="Go to Home page" CssClass="red-button" PostBackUrl="Registeration.aspx" />
+
         </div>
     </form>
 </body>

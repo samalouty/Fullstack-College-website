@@ -71,17 +71,32 @@
     <Content Include="AdminPage.aspx" />
     <Content Include="AdvisorList.aspx" />
     <Content Include="AdvisorWithStudent.aspx" />
+    <Content Include="Courses.aspx" />
+    <Content Include="CourseSlotInstructor.aspx" />
     <Content Include="Course_Delete.aspx" />
+    <Content Include="Exams.aspx" />
     <Content Include="Fetchactivestudents.aspx" />
     <Content Include="Fetchsemesters.aspx" />
+    <Content Include="GradPlan.aspx" />
     <Content Include="GreenStyles.css" />
     <Content Include="greenTable.css" />
+    <Content Include="Installements.aspx" />
+    <Content Include="Instructors.aspx" />
     <Content Include="InstToCourse.aspx" />
     <Content Include="IssueInstallment.aspx" />
+    <Content Include="Login.aspx" />
     <Content Include="login1.aspx" />
+    <Content Include="MainPage.aspx" />
+    <Content Include="Makeup.aspx" />
     <Content Include="NewCourse.aspx" />
     <Content Include="NewSem.aspx" />
+    <Content Include="Options.aspx" />
     <Content Include="PendingRequests.aspx" />
+    <Content Include="Phone.aspx" />
+    <Content Include="Prerequisites.aspx" />
+    <Content Include="Registeration.aspx" />
+    <Content Include="Requests.aspx" />
+    <Content Include="Signup.aspx" />
     <Content Include="Slot_Delete.aspx" />
     <Content Include="StudToAdv.aspx" />
     <Content Include="StudToCourseInst.aspx" />
@@ -122,12 +137,33 @@
     <Compile Include="AdvisorWithStudent.aspx.designer.cs">
       <DependentUpon>AdvisorWithStudent.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Courses.aspx.cs">
+      <DependentUpon>Courses.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Courses.aspx.designer.cs">
+      <DependentUpon>Courses.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CourseSlotInstructor.aspx.cs">
+      <DependentUpon>CourseSlotInstructor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CourseSlotInstructor.aspx.designer.cs">
+      <DependentUpon>CourseSlotInstructor.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Course_Delete.aspx.cs">
       <DependentUpon>Course_Delete.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Course_Delete.aspx.designer.cs">
       <DependentUpon>Course_Delete.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Exams.aspx.cs">
+      <DependentUpon>Exams.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Exams.aspx.designer.cs">
+      <DependentUpon>Exams.aspx</DependentUpon>
     </Compile>
     <Compile Include="Fetchactivestudents.aspx.cs">
       <DependentUpon>Fetchactivestudents.aspx</DependentUpon>
@@ -143,6 +179,27 @@
     <Compile Include="Fetchsemesters.aspx.designer.cs">
       <DependentUpon>Fetchsemesters.aspx</DependentUpon>
     </Compile>
+    <Compile Include="GradPlan.aspx.cs">
+      <DependentUpon>GradPlan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GradPlan.aspx.designer.cs">
+      <DependentUpon>GradPlan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Installements.aspx.cs">
+      <DependentUpon>Installements.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Installements.aspx.designer.cs">
+      <DependentUpon>Installements.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Instructors.aspx.cs">
+      <DependentUpon>Instructors.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Instructors.aspx.designer.cs">
+      <DependentUpon>Instructors.aspx</DependentUpon>
+    </Compile>
     <Compile Include="InstToCourse.aspx.cs">
       <DependentUpon>InstToCourse.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -157,12 +214,33 @@
     <Compile Include="IssueInstallment.aspx.designer.cs">
       <DependentUpon>IssueInstallment.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
     <Compile Include="login1.aspx.cs">
       <DependentUpon>login1.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="login1.aspx.designer.cs">
       <DependentUpon>login1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MainPage.aspx.cs">
+      <DependentUpon>MainPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MainPage.aspx.designer.cs">
+      <DependentUpon>MainPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Makeup.aspx.cs">
+      <DependentUpon>Makeup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Makeup.aspx.designer.cs">
+      <DependentUpon>Makeup.aspx</DependentUpon>
     </Compile>
     <Compile Include="NewCourse.aspx.cs">
       <DependentUpon>NewCourse.aspx</DependentUpon>
@@ -178,6 +256,13 @@
     <Compile Include="NewSem.aspx.designer.cs">
       <DependentUpon>NewSem.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Options.aspx.cs">
+      <DependentUpon>Options.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Options.aspx.designer.cs">
+      <DependentUpon>Options.aspx</DependentUpon>
+    </Compile>
     <Compile Include="PendingRequests.aspx.cs">
       <DependentUpon>PendingRequests.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -185,7 +270,42 @@
     <Compile Include="PendingRequests.aspx.designer.cs">
       <DependentUpon>PendingRequests.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Phone.aspx.cs">
+      <DependentUpon>Phone.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Phone.aspx.designer.cs">
+      <DependentUpon>Phone.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Prerequisites.aspx.cs">
+      <DependentUpon>Prerequisites.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Prerequisites.aspx.designer.cs">
+      <DependentUpon>Prerequisites.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Registeration.aspx.cs">
+      <DependentUpon>Registeration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Registeration.aspx.designer.cs">
+      <DependentUpon>Registeration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Requests.aspx.cs">
+      <DependentUpon>Requests.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Requests.aspx.designer.cs">
+      <DependentUpon>Requests.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Signup.aspx.cs">
+      <DependentUpon>Signup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Signup.aspx.designer.cs">
+      <DependentUpon>Signup.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Slot_Delete.aspx.cs">
       <DependentUpon>Slot_Delete.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
