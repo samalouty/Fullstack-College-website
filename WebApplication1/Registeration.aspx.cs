@@ -29,7 +29,7 @@ namespace m3
 
         protected void Advisor_Click(object sender, EventArgs e)
         {
-            Response.Redirect("Advisor.aspx");
+            Response.Redirect("loginADV.aspx");
         }
     }
 
