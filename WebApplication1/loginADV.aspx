@@ -24,7 +24,7 @@
             &nbsp;</div>
         <div class="">
             <asp:Button runat="server" OnClick="btnRegister_Click" Text="Register Now" CssClass="submit-button"></asp:Button>&nbsp;</div>
-        <asp:Button runat="server" ID="btnRedirect" Text="Go to Advisor page" CssClass="red-button" PostBackUrl="advisorpage.aspx" />
+        <asp:Button runat="server" ID="btnRedirect" Text="Go Back" CssClass="red-button" PostBackUrl="FrontPage.aspx" />
 
     </form>
 </body>

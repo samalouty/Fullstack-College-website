@@ -78,7 +78,7 @@
             <asp:TextBox runat="server" ID="txtPassword" TextMode="Password" CssClass="textbox"></asp:TextBox><br />
 
             <asp:Button runat="server" Text="Login" OnClick="btnLogin_Click" CssClass="button" />
-            <asp:Button runat="server" ID="btnRedirect" Text="Go to Home page" CssClass="red-button" PostBackUrl="Registeration.aspx" />
+            <asp:Button runat="server" ID="btnRedirect" Text="Go to Home page" CssClass="red-button" PostBackUrl="FrontPage.aspx" />
 
         </div>
     </form>
