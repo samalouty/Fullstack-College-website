@@ -72,7 +72,7 @@ namespace m3
         protected void Back_Click(object sender, EventArgs e)
         {
 
-            Response.Redirect("Registeration.aspx");
+            Response.Redirect("FrontPage.aspx");
         }
 
      
