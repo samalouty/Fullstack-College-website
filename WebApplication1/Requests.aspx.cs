@@ -50,6 +50,11 @@ namespace m3
 
 
             }
+            catch (OverflowException)
+            {
+
+                ClientScript.RegisterStartupScript(GetType(), "alert", "alert('Invalid Course ID!');", true);
+            }
 
         }
         protected void Click0_Click(object sender, EventArgs e)
@@ -84,10 +89,15 @@ namespace m3
 
 
             }
+            catch (OverflowException)
+            {
 
-
-
+                ClientScript.RegisterStartupScript(GetType(), "alert", "alert('Invalid Course ID!');", true);
             }
+
+
+
+        }
 
         protected void Back_Click(object sender, EventArgs e)
         {

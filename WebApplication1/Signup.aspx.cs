@@ -69,7 +69,11 @@ namespace m3
 
             }
 
+            catch (OverflowException)
+            {
 
+                ClientScript.RegisterStartupScript(GetType(), "alert", "alert('Invalid  ID!');", true);
+            }
 
         }
 

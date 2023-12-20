@@ -57,7 +57,11 @@ namespace m3
                 ClientScript.RegisterStartupScript(GetType(), "alert", "alert('Please Add a valid username and password');", true);
             }
 
-           
+            catch (OverflowException)
+            {
+
+                ClientScript.RegisterStartupScript(GetType(), "alert", "alert('Invalid  ID!');", true);
+            }
         }
 
         protected void Register_Click(object sender, EventArgs e)

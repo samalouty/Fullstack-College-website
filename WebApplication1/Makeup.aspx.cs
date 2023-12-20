@@ -78,6 +78,11 @@ namespace M3
             {
                 Message.Text = "You are already registered";
             }
+            catch (OverflowException)
+            {
+
+                ClientScript.RegisterStartupScript(GetType(), "alert", "alert('Invalid Course ID!');", true);
+            }
         }
     }
 }

@@ -40,7 +40,7 @@
 
     <form id="form1" runat="server">
         <div class="form">
-            Chooose to login
+            Choose to login
             <br /><br />
             <asp:Button ID="Button1" runat="server" Text="Student" OnClick="Student_Click" CssClass="submit-button" />
 <br /><br />

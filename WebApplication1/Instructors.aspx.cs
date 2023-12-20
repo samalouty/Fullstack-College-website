@@ -52,6 +52,11 @@ namespace M3
             {
                 Message.Text = "Non-existing Instructor, Please re-enter the instructor ID.";
             }
+            catch (OverflowException)
+            {
+
+                ClientScript.RegisterStartupScript(GetType(), "alert", "alert('Invalid Instructor or Course ID!');", true);
+            }
         }
 
         protected void Back_Click(object sender, EventArgs e)
